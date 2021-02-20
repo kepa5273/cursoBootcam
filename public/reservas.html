@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="enlaces">
+        <button><a href="http://localhost:3000/clientes.html">clientes</a></button>
+        <button><a href="http://localhost:3000/habitaciones.html">habitaciones</a></button>
+    </div>
+    <h2>RESERVAS</h2>
+
+    <div id="inputsResev">
+        <form>
+            <input id="nombreReserv" type="text" name="nombre" placeholder="nombre">
+            <input id="apellidoReserv" type="text" name="apellido" placeholder="apellido">
+            <input id="dniReserv" type="text" name="dni" placeholder="dni">
+            <input id="habitacionReserv" type="number" name="habitacion" placeholder="habitacion">
+            <input id="checkinReserv" type="date" name="checkin" placeholder="checkin">
+            <input id="checkoutReserv" type="date" name="checkout" placeholder="checkout">
+        </form>
+        <button id="botonReserv" onclick="location.reload()">registro</button>
+
+    </div>
+
+
+    <div id="reservasGet"></div>
+    <script src="./scriptReservas.js"></script>
+</body>
+
+</html>

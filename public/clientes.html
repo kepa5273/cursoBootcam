@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="enlaces">
+        <button><a href="http://localhost:3000/reservas.html">reservas</a></button>
+        <button><a href="http://localhost:3000/habitaciones.html">habitaciones</a></button>
+    </div>
+    <h2>GESTION CLIENTES</h2>
+    <div id="clientesReg">
+        <h2>registro</h2>
+        <form action="/routes/clientes/post" method="POST">
+            <input type="text" name="nombre" placeholder="nombre" required>
+            <input type="text" name="apellido" placeholder="apellido" required>
+            <input type="text" name="dni" placeholder="dni" required>
+            <button type="submit">registro </button>
+        </form>
+    </div>
+    <div id="clientesAct">
+        <h2>actualizacion</h2>
+        <div id="inputs">
+            <input id="nombrePut" type="text" name="nombrePut" placeholder="nombre">
+            <input id="apellidoPut" type="text" name="apellidoPut" placeholder="apellido">
+            <input id="dniPut" type="text" name="dniPut" placeholder="dni">
+            <button id="boton" onclick="location.reload()">actualiza</button>
+        </div>
+    </div>
+    <div id="clientesBorr">
+        <h2>borrado</h2>
+        <div id="inputs">
+            <input id="dniDelete" type="text" name="dniDelete" placeholder="dni">
+        </div>
+        <button id="botonDelete" onclick="location.reload()"> borrado </button>
+    </div>
+
+
+    <h2>LISTADO CLIENTES</h2>
+    <div id="clientesGet"></div>
+    <div id="mensaje"></div>
+    <script src="./scriptClientes.js"></script>
+
+</body>
+
+</html>
